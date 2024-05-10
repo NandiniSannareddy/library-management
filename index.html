@@ -1,0 +1,331 @@
+<!--<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Library Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+        <link rel="stylesheet" href="library.css" type="text/css"/>
+
+
+    </head>
+    <body>
+        <section id="sec1">
+            
+            <nav >
+                <div id="nav">
+                    <i class="fa-solid fa-book-open-reader" id="lib">Library</i>
+
+                    <ul id="list">
+                        <li>
+                            <a href="#sec1">Home</a>
+                        </li>
+                        <li>
+                            <a href="signin.html">Signin</a>
+                        </li>
+                        <li>
+                            <a href="signup.html">Signup</a>
+                        </li>
+                        <li>
+                            <a href="admin.html">Admin</a>
+                        </li>
+                        <li>
+                            <a href="#sec2">Contact</a>
+                        </li>
+                    </ul>
+                    <i onclick="menu1()" class="fa-solid fa-bars" id="menu"  > </i>
+                </div>
+            </nav>
+
+            <div class="time">
+                <center><h1 >Timings </h1></center>
+                <center> <p>opens at 9 am</p> </center>
+                <center><p>closes at 4pm</p></center>
+            </div>
+
+        </section>
+        <script>
+
+            function menu1() {
+                var menu = document.getElementById('menu');
+                var list = document.getElementById('list');
+
+                list.style.marginLeft = (list.style.marginLeft === '0%' ? '100%' : '0%');
+                menu.classList.toggle('fa-times');
+            }
+        </script>
+
+        <section id="sec2">
+
+
+            <center> <h1 style="color:#2FF3E0;">CONTACT US</h1> </center>
+
+
+            <div id="contact">
+
+
+                <div class="cospace">
+                    <div>
+                        <i class="fa-solid fa-phone icon"> CALL US</i>
+                        <pre class="symbol">+91 1234567890</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div >
+                        <i class="fa-solid fa-location-dot icon">LOCATION</i>
+
+                        <pre class="symbol">AP, Vidyanagar-N.B.K.R.I.S.T</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+                        <i class="fa-solid fa-envelope icon ">EMAIL</i>                
+                        <pre class="symbol">nandinisannareddy@gmail.com</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div >
+                        <a > <i class="fa-brands fa-linkedin social"></i></a>
+                        <a > <i class="fa-brands fa-github social"></i> </a>
+                        <a><i class="fa-brands fa-facebook social"></i></a>
+                        <a><i class="fa-brands fa-twitter social"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="message">
+
+                <div class="cospace">
+                    <div>
+                        <label class="label">NAME:</label>
+                        <input class="input" type="text" placeholder="enter your name">
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+                        <label class="label">EMAIL:</label>
+                        <input  class="input" type="email" placeholder="enter your email id">
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+
+                        <label class="label"> MESSAGE:</label>
+                        <textarea class="input" placeholder="message" rows="4"> </textarea>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <a href="mailto:nandinisannareddy@gmail.com"> <button class="btn">Send Mail</button> </a>
+                </div>
+
+            </div>     
+
+        </section>
+
+
+        <footer style="color:#4C5270"> <center>copyright &copy 2024, library management</center></footer>
+    </body>
+</html>-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Library Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+        <link rel="stylesheet" href="library.css" type="text/css"/>
+        
+
+    </head>
+    <body>
+        <section id="sec1">
+            
+            <nav >
+                <div id="nav">
+                    <i class="fa-solid fa-book-open-reader" id="lib">Library</i>
+
+                    <ul id="list">
+                        <li>
+                            <a href="#sec1">Home</a>
+                        </li>
+                        <li>
+                            <a href="#sec3">About</a>
+                        </li>
+                        <li >
+                            
+                            <div id="dropbtn" onmouseover ="dropdisplay()"  >    <a href="#"  >Signin</a> </div>
+                            <ul id="drop">
+                                <li> <a href="signin.html">Student login</a></li>
+                                <li> <a href="facultylogin.html">Faculty login</a></li>
+                                <li> <a href="admin.html">Admin login</a></li>
+                            </ul>
+                            
+                        </li>
+                           
+                        <li>
+                            <a href="signup.html">Signup</a>
+                        </li>
+                        <li>
+                            <a href="#sec4"  >Services</a>
+                        </li>
+                        <li>
+                            <a href="#sec2">Contact</a>
+                        </li>
+                    </ul>
+                    <i onclick="menu1()" class="fa-solid fa-bars" id="menu"  > </i>
+                </div>
+                
+            </nav>
+
+            <div class="time">
+                <center><h1 >Timings </h1></center>
+                <center> <p>opens at 9 am</p> </center>
+                <center><p>closes at 4pm</p></center>
+            </div>
+
+        </section>
+        <script>
+
+            function menu1() {
+                var menu = document.getElementById('menu');
+                var list = document.getElementById('list');
+
+                list.style.marginLeft = (list.style.marginLeft === '0%' ? '100%' : '0%');
+                menu.classList.toggle('fa-times');
+            }
+        </script>
+
+        <script>
+            function dropdisplay(){
+                var dropbtn=document.getElementById('dropbtn');
+                var drop=document.getElementById('drop');
+                
+                if(drop.style.display==='block'){
+                    drop.style.display='none'
+                }
+                else{
+                    drop.style.display='block'
+                }
+            }
+        </script>
+        <section id="sec3">
+                <section class="about-section">
+        <h2>About Us</h2>
+        <img src="https://wallpapercave.com/wp/WOAttEL.jpg" alt="Library" class="about-image">
+        <p>Welcome to our Library Management System, your one-stop solution for efficiently managing library operations. Whether you're a small community library or a large academic institution, our system is designed to meet your needs.</p>
+        <p>Our mission is to empower libraries to better serve their communities by providing access to information and resources in a user-friendly and efficient manner. With our intuitive interface and robust features, you can streamline catalog management, simplify circulation, and gain valuable insights into library usage patterns.</p>
+        <p>Contact us today to learn more about how our Library Management System can benefit your institution!</p>
+    </section>   
+        </section>   
+        
+        <section id="sec4">
+        <section class="service-section">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Faculty Upload</h3>
+            <p>Faculty members can upload books to the system, making them available for students to access.</p>
+        </div>
+        <div class="service">
+            <h3>Student Access</h3>
+            <p>Students can access the uploaded books and read them online or download for offline reading.</p>
+        </div>
+        <div class="service">
+            <h3>Admin Management</h3>
+            <p>Admin users have full control over the system, including the ability to add, edit, and delete books, manage user accounts, and oversee system settings.</p>
+        </div>
+    </section>
+        
+        </section> 
+        
+        
+        <section id="sec2">
+
+            
+             <h1 style="color:#2FF3E0;">CONTACT US</h1>
+
+            <div id="contsection">
+            <div id="contact">
+
+
+                <div class="cospace">
+                    <div>
+                        <i class="fa-solid fa-phone icon"> CALL US</i>
+                        <pre class="symbol">+91 1234567890</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div >
+                        <i class="fa-solid fa-location-dot icon">LOCATION</i>
+
+                        <pre class="symbol">AP, Vidyanagar-N.B.K.R.I.S.T</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+                        <i class="fa-solid fa-envelope icon ">EMAIL</i>                
+                        <pre class="symbol">nandinisannareddy@gmail.com</pre>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div >
+                        <a > <i class="fa-brands fa-linkedin social"></i></a>
+                        <a > <i class="fa-brands fa-github social"></i> </a>
+                        <a><i class="fa-brands fa-facebook social"></i></a>
+                        <a><i class="fa-brands fa-twitter social"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="message">
+
+                <div class="cospace">
+                    <div>
+                        <label class="label">NAME:</label>
+                        <input class="input" type="text" placeholder="enter your name">
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+                        <label class="label">EMAIL:</label>
+                        <input  class="input" type="email" placeholder="enter your email id">
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <div>
+
+                        <label class="label"> MESSAGE:</label>
+                        <textarea class="input" placeholder="message" rows="4"> </textarea>
+                    </div>
+                </div>
+
+                <div class="cospace">
+                    <a href="mailto:nandinisannareddy@gmail.com"> <button class="btn">Send Mail</button> </a>
+                </div>
+
+            </div>     
+            </div>
+        </section>
+
+
+        <footer style="color:#4C5270"> <center>copyright &copy 2024, library management</center></footer>
+    </body>
+</html>
+
+
+
+
